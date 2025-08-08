@@ -6,7 +6,8 @@ body {
 }
 
 div {
-    border: 1px solid black;
+
+    margin: 16px;
 }
 
 .container {
@@ -15,6 +16,7 @@ div {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
 }
 
 .row, .rowDiv{
@@ -26,3 +28,8 @@ div {
 .row {
     display: flex;
 }
+
+.sizeButton {
+    margin: 16px;
+}
+

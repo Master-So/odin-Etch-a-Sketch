@@ -10,16 +10,19 @@ div {
 }
 
 .container {
-    min-width: 100px;
-    min-height: 100px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .row, .rowDiv{
-    min-height: 10px;
-    min-width: 10px;
+    min-height: 1px;
+    min-width: 1px;
+    flex: 1;
 }
 
 .row {
     display: flex;
-
 }

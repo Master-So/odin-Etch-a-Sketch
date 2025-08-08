@@ -2,6 +2,7 @@
 
 function fillContainer(size) {
     const container = document.querySelector(".container");
+    container.setAttribute("class", "container");
 
     for (let i = 0; i < size; i++) {
         const row = document.createElement("div");
@@ -21,8 +22,8 @@ function fillContainer(size) {
             rowDiv.addEventListener("click", () => {
                 rowDiv.style.backgroundColor = "black";
                 rowDiv.removeEventListener("mouseover", mouseOverHandler)
-                rowDiv.removeEventListener("mouseout", mouseOutHandler)});
-
+                rowDiv.removeEventListener("mouseout", mouseOutHandler)}
+            );
 
         }
         container.appendChild(row);
@@ -30,4 +31,4 @@ function fillContainer(size) {
     
 }
 
-fillContainer(50);
+fillContainer(20);

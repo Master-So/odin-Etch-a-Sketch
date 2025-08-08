@@ -31,4 +31,19 @@ function fillContainer(size) {
     
 }
 
-fillContainer(20);
+function getInput() {
+    const button = document.querySelector("#sizeButton");
+    button.addEventListener("click", () => {
+        let size;
+        while (true) {
+            size = parseInt(prompt("Enter size: "));
+            if (size <= 100 && size > 0) break;
+        }
+        document.querySelector(".container").innerHTML = "";  
+        fillContainer(size);
+    });
+}
+
+getInput();
+
+

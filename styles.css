@@ -17,11 +17,9 @@ div {
 .row, .rowDiv{
     min-height: 10px;
     min-width: 10px;
-
 }
 
 .row {
     display: flex;
-    height: auto;
-    width: auto;
+
 }

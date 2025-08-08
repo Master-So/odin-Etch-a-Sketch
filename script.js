@@ -13,10 +13,21 @@ function fillContainer(size) {
             //rowDiv.textContent = "Hi!"
             console.log("j: " + j);
             rowDiv.setAttribute("class", "rowDiv");
+            const mouseOverHandler = () => rowDiv.style.backgroundColor = "grey";
+            const mouseOutHandler = () => rowDiv.style.backgroundColor = "white";
+            rowDiv.addEventListener("mouseover", mouseOverHandler);
+            rowDiv.addEventListener("mouseout", mouseOutHandler);
+
+            rowDiv.addEventListener("click", () => {
+                rowDiv.style.backgroundColor = "black";
+                rowDiv.removeEventListener("mouseover", mouseOverHandler)
+                rowDiv.removeEventListener("mouseout", mouseOutHandler)});
+
+
         }
         container.appendChild(row);
     }
     
 }
 
-fillContainer(16);
+fillContainer(50);
